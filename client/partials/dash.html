@@ -1,0 +1,14 @@
+<div ng-controller = 'userController'>
+  {{currUser.username}}
+
+  <a href='/logout'>Logout</a>
+
+  <div ng-controller='pollController'>
+    <form ng-submit='addMessage(currUser._id)'>
+      <textarea ng-model='newMessage.content'></textarea>
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
+
+</div>
